@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 5%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: white;
+}
+
+span{
+    color: coral;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: 0.3s ease;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: coral;
+
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.content{
+    max-width: 800px;
+}
+
+.content h3{
+    font-size: 40px;
+}
+
+.content h1{
+    font-size: 40px;
+    line-height: 1.2;
+    color: coral;
+
+}
+
+.content span{
+    color: black;
+    animation: span 3s infinite;
+}
+
+@keyframes span{
+    0%{
+        color: black;
+
+    }
+    25%{
+        color: coral;
+    }
+    50%{
+        color: black;
+    }
+    75%{
+        color: coral;
+    }
+    100%{
+        color: black;
+    }
+}
+
+.content p{
+    font-size: 16px;
+    margin: 25px 0 30px;
+    text-align: justify;
+}
+
+.btn-box{
+    width: 300px;
+    display: flex;
+    gap: 2em;
+}
+
+.link a{
+    border: solid black 2px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+.link a:hover{
+    background-color: white;
+    color: coral;
+
+}
+
+.btn a{
+     border: solid black 2px; 
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn a:hover{
+    background-color: white;
+    color: coral;
+} 
+
+.imahe img{
+    border-radius: 30%;
+    width: 350px;
+    height: 350px;
+    box-shadow: grey 0px 30px 30px,
+    grey 0px -12px 30px, 
+    grey 0px 4px 6px, 
+    grey 0px 12px 13px, 
+    grey 0px -3px 5px;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 10%;
+    gap: 8em;
+    background: url(ge.jpg);
+}
+
+.imahe-about img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: grey 0px 30px 30px,
+    grey 0px -12px 30px, 
+    grey 0px 4px 6px, 
+    grey 0px 12px 13px, 
+    grey 0px -3px 5px;
+    border-radius: 30%;
+}
+
+.about-content h2{
+    text-align: left;
+    color: Coral;
+    font-size: 40px;
+}
+
+.about-content {
+    color:white;
+    font-size: 18px;
+    margin: 2em;
+    text-align: justify;
+}
+
+.education{
+    background: url(ge.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 10%;
+    gap: 8em;
+}
+
+.background img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 30%;
+    box-shadow: grey 0px 30px 30px,
+    grey 0px -12px 30px, 
+    grey 0px 4px 6px, 
+    grey 0px 12px 13px, 
+    grey 0px -3px 5px;
+}
+
+.educ-content h2{
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+
+.educ-content h3{
+    font-size: 50px;
+    color: coral;
+}
+
+.educ-content {
+    color:white;
+    font-size: 18px;
+    margin: 2em;
+    text-align: justify;
+}
+
+.Certificates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 15% 15%;
+    gap: 5em;
+}
+
+.cert h2{
+    position: relative;
+    text-align: center;
+    color: coral;
+    font-size: 40px;
+}
+
+.cert a{
+    color: black;
+    font-size: 25px;
+}
+
+.cert a:hover{
+    color: coral;
+}
+
+.cert p{
+    font-size: 20px;
+    margin: 40px 0 30px;
+    text-align: justify;
+}
+
+.cert ul li{
+    text-align: center;
+    align-items: justify;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.contact h2{
+    text-align: center;
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
+    font-size: 40px;
+    color: coral;
+    
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 4% 0%  0%;
+    background: url(ge.jpg);
+    
+}
+
+.contact form{
+    max-width: 35em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.contact form .input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.contact form .input input,
+.contact form textarea{
+    width: 100%;
+    padding: .5em;
+    font-size: 15px;
+    color: black;
+    background: white;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    resize: none;
+}
+
+.btn-1{
+    background-color: coral;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border: solid black 2px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    transform: scale(.8);
+    
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+}
+
+.footer .socmed{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .socmed a{
+    font-size: 20px;
+    color: white;
+    border: solid 2px white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: ease 0.3s;
+}
+
+.footer .socmed a:hover{
+    background-color: white;
+    color: coral;
+
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+.sk h2{
+    position: relative;
+    text-align: center;
+    color: coral;
+    font-size: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 15% 5%;
+    gap: 5em;
+}
+
+.label h3{
+    margin: 5px;
+    color: black;
+}
+
+.label h2{
+    text-align: center;
+    color: black;
+}
+.label{
+    width: 500px;
+    margin: 40px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgb(0, 0 , 0, 0.25),
+    0 10px 10px rgb(0, 0 , 0, 0.22)
+    ;
+}
+
+.label li{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: white;
+    display: block;
+    height: 20px;
+    border: solid 1px black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(0, 0 , 0, 0.12),
+    0 1px 2px rgb(0, 0 , 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgb(0, 0 , 0, 0.25),
+    0 10px 10px rgb(0, 0 , 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: coral;
+}
+.html{
+    width: 50%;
+    animation: html 3s;
+}
+
+.css{
+    width: 40%;
+    animation: css 3s;
+}
+
+.js{
+    width: 8%;
+    animation: js 3s;
+}
+
+.sql{
+    width: 20%;
+    animation: sql 3s;
+}
+
+.fig{
+    width: 5%;
+    animation: fig 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 8%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes fig{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 5%;
+    }
+}
+
+
+.projects{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2% 15% 3%;
+    gap: 5rem;
+    /* background-color: aquamarine; */
+}
+
+.card h2{
+    text-align: center;
+    font-size: 40px;
+    color: coral;
+    margin-bottom: 0;
+
+} 
+
+.card{
+    padding: 10px 0;
+}
+
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgb(0, 0 , 0, 0.25),
+    0 10px 10px rgb(0, 0 , 0, 0.22)
+    ;
+}
+
+.box img{
+    /* max-height: 70vh; */
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, coral 100%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 20px;
+    font-family: arial;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.overlay a{
+        margin-top: 10px;
+        color: coral;
+        text-decoration: none;
+        font-size: 14px;
+        background: white;
+        border-radius: 50px;
+        text-align: center;
+        padding: 5px 15px;
+}
+
+.overlay p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
+
